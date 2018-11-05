@@ -78,3 +78,18 @@ input[type="text"], input[type="password"] {
     padding-left: 40px;
     width: 80%;
 }
+
+#main-contain-test {
+    margin: 0px auto;
+    background-color: white;
+    height: 600px; overflow:auto;
+    text-align:center;
+    padding:15px;
+    border-radius:10px;
+}
+
+.disabled-button {
+    opacity: 0;
+    cursor: not-allowed;
+}
+

@@ -14,6 +14,7 @@ if(isset($_GET['p'])){
         include "Register.php";
     }
 
+
 }
 else include "main.php";
 ?>

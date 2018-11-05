@@ -1,4 +1,8 @@
-<?php require_once("header_student.php");?>
+<?php 
+session_start();
+require_once("header_student.php");
+$monhoc =  $_REQUEST['monhoc'];
+?>
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
@@ -9,16 +13,25 @@
         <h1 class="page-title" style=" MARGIN-LEFT: 26%; font-size: 108px;">Tiếng anh</h1>      
         
         <div class="row section-buttons mt-40">
-
-          <div class="col-md-4">
-            <div>
+<!--             <div>
               <a href="View/listen.php" class="btn btn-sm btn-color" style="width: 99px;    height: 30px;     margin-left: 150%;">
                 <span>TEST</span>
               </a>
-            </div>
-            <div>
+            </div> -->
+            <div class="col-sm-3">
               <div class="dropdown dropright">
-				    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" style="margin-left: 146%;">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" >
+                  TEST
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="View/test.php?test=1&monhoc=<?php 
+                  echo $monhoc ?> ">TEST 1 </a>
+                </div>
+              </div>   
+            </div> 
+            <div class="col-sm-9">
+              <div class="dropdown dropright">
+				    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" >
 				      BÀI GIẢNG
 				    </button>
 				    <div class="dropdown-menu">
@@ -27,7 +40,7 @@
 				    </div>
 				  </div>   
             </div>              
-          </div>
+       
 
         </div>       
 

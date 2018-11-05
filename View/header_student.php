@@ -3,10 +3,10 @@
 ob_start();
 require_once "../Model/Model.php";
 $toeic = new model();
-if (isset($_GET['p']))
+/*if (isset($_GET['p']))
     $p = $_GET['p'];
 if (!isset($_SESSION['login_id']) && $_SERVER['REQUEST_URI'] != "/ToeicThi/View/Login.html")
-    $_SESSION['back'] = "http://localhost" . $_SERVER['REQUEST_URI'];
+    $_SESSION['back'] = "http://localhost" . $_SERVER['REQUEST_URI'];*/
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -245,7 +245,7 @@ if (!isset($_SESSION['login_id']) && $_SERVER['REQUEST_URI'] != "/ToeicThi/View/
                     <li class="nav__dropdown">
                         <a>DANH SÁCH MÔN HỌC</a>
                            <ul class="nav__dropdown-menu">
-                            <li><a href="View/montienganh.php">TIẾNG ANH</a></li>
+                            <li><a href="View/montienganh.php?monhoc=1">TIẾNG ANH</a></li>
                             <li><a href="View/laptrinhc.php">LẬP TRÌNH C++</a></li>
                         </ul>
                     </li>
@@ -290,6 +290,7 @@ if (!isset($_SESSION['login_id']) && $_SERVER['REQUEST_URI'] != "/ToeicThi/View/
              alert('ok 1');
         });
      });
+     
  </script> -->
  
     

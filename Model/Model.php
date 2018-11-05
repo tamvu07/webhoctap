@@ -14,7 +14,7 @@ class model extends connection
         return false;
     } // end login
 
-    function getTinTuc($param)
+ /*   function getTinTuc($param)
     {
         if ($param == 'vi') {
             $sql = "select * from tintuc where NgonNgu='vi'";
@@ -32,7 +32,7 @@ class model extends connection
         }
         return $this->con->error;
     }
-
+*/
     function getIdUser($idUser)
     {
         $sql = "select * from nguoidung where IdUser='$idUser'";
@@ -128,7 +128,19 @@ class model extends connection
 
 /*ket thuc login check password and username*/
 
+    public function get_test_databse($monhoc,$test){
+        $sql = "select * from bocauhoi where MaMonHoc='$monhoc' and MaDeThi='$test' ";
+        
+        $kq = $this->con->query($sql);
+        if($kq->num_rows != 0){
+            return $kq;
+        }else {
+            /*return $this->con->error();*/
+            return 0;
+        }
+    }
+
+
 }
 
-//cac method
 ?>

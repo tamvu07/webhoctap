@@ -1,542 +1,624 @@
-<!-- Hero Slider -->
-<section class="hero-slider-1">
-    <div id="flickity-hero" class="carousel-main">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 
-        <div class="carousel-cell hero-slider-1__item">
-            <article class="hero-slider-1__entry entry">
-                <div class="hero-slider-1__thumb-img-holder"
-                     style="background-image: url(img/layout/hero_1.jpg)">
+    <div class="main-container container" id="main-container" style="    background-color: #fff; ">
+
+    <!-- Featured Posts Grid -->      
+    <section class="featured-posts-grid featured-posts-grid--1">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6">
+
+            <article class="entry thumb thumb--size-4">
+              <div class="entry__img-holder thumb__img-holder" style="background-image: url('img/content/hero/hero_post_13.jpg');">
+                <div class="bottom-gradient"></div>
+                <div class="thumb-text-holder thumb-text-holder--3">
+                  <a href="categories.html" class="entry__meta-category entry__meta-category--label entry__meta-category--violet">World</a>
+                  <ul class="entry__meta">
+                    <li class="entry__meta-author">
+                      <span>by</span>
+                      <a href="#">DeoThemes</a>
+                    </li>
+                    <li class="entry__meta-date">
+                      Jan 21, 2018
+                    </li>
+                  </ul>
+                  <h2 class="thumb-entry-title">
+                    <a href="single-post-videos.html">People Who Take Cold Showers Take Fewer Sick Days, Study Finds</a>
+                  </h2>
+                </div>
+                <a href="single-post-videos.html" class="thumb-url"></a>
+              </div>
+            </article>
+
+            <div class="row">
+              <div class="col-lg-6">
+                <article class="entry thumb thumb--size-1">
+                  <div class="entry__img-holder thumb__img-holder" style="background-image: url('img/content/hero/hero_post_15.jpg');">
                     <div class="bottom-gradient"></div>
-                </div>
-                <div class="hero-slider-1__thumb-text-holder">
-                    <div class="container">
-                        <h2 class="hero-slider-1__entry-title">
-                            <a href="single-post-music.html">abc</a>
-                        </h2>
+                    <div class="thumb-text-holder thumb-text-holder--4">
+                      <h2 class="thumb-entry-title">
+                        <a href="single-post-videos.html">People Who Take Cold Showers Take Fewer Sick Days, Study Finds</a>
+                      </h2>
                     </div>
-                </div>
-            </article>
-        </div>
-
-        <div class="carousel-cell hero-slider-1__item">
-            <article class="hero-slider-1__entry entry">
-                <div class="hero-slider-1__thumb-img-holder"
-                     style="background-image: url(img/layout/hero_2.jpg)">
+                    <a href="single-post-videos.html" class="thumb-url"></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-lg-6">
+                <article class="entry thumb thumb--size-1">
+                  <div class="entry__img-holder thumb__img-holder" style="background-image: url('img/content/hero/hero_post_16.jpg');">
                     <div class="bottom-gradient"></div>
-                </div>
-                <div class="hero-slider-1__thumb-text-holder">
-                    <div class="container">
-                        <h2 class="hero-slider-1__entry-title">
-                            <a href="single-post-music.html">abc</a>
-                        </h2>
+                    <div class="thumb-text-holder thumb-text-holder--4">
+                      <h2 class="thumb-entry-title">
+                        <a href="single-post-videos.html">People Who Take Cold Showers Take Fewer Sick Days, Study Finds</a>
+                      </h2>
                     </div>
-                </div>
-            </article>
-        </div>
+                    <a href="single-post-videos.html" class="thumb-url"></a>
+                  </div>
+                </article>
+              </div>
+            </div> <!-- end row -->
 
-        <div class="carousel-cell hero-slider-1__item">
-            <article class="hero-slider-1__entry entry">
-                <div class="hero-slider-1__thumb-img-holder"
-                     style="background-image: url(img/layout/hero_3.jpg)">
+          </div> <!-- end col -->
+
+          <div class="col-lg-6">
+
+            <article class="entry thumb thumb--size-4">
+              <div class="entry__img-holder thumb__img-holder" style="background-image: url('img/content/hero/hero_post_14.jpg');">
+                <div class="bottom-gradient"></div>
+                <div class="thumb-text-holder thumb-text-holder--3">
+                  <a href="categories.html" class="entry__meta-category entry__meta-category--label entry__meta-category--cyan">Technology</a>
+                  <ul class="entry__meta">
+                    <li class="entry__meta-author">
+                      <span>by</span>
+                      <a href="#">DeoThemes</a>
+                    </li>
+                    <li class="entry__meta-date">
+                      Jan 21, 2018
+                    </li>
+                  </ul>
+                  <h2 class="thumb-entry-title">
+                    <a href="single-post-videos.html">People Who Take Cold Showers Take Fewer Sick Days, Study Finds</a>
+                  </h2>
+                </div>
+                <a href="single-post-videos.html" class="thumb-url"></a>
+              </div>
+            </article>
+
+            <div class="row">
+              <div class="col-lg-6">
+                <article class="entry thumb thumb--size-1">
+                  <div class="entry__img-holder thumb__img-holder" style="background-image: url('img/content/hero/hero_post_17.jpg');">
                     <div class="bottom-gradient"></div>
-                </div>
-                <div class="hero-slider-1__thumb-text-holder">
-                    <div class="container">
-                        <h2 class="hero-slider-1__entry-title">
-                            <a href="single-post-music.html">abc</a>
-                        </h2>
+                    <div class="thumb-text-holder thumb-text-holder--4">
+                      <h2 class="thumb-entry-title">
+                        <a href="single-post-videos.html">People Who Take Cold Showers Take Fewer Sick Days, Study Finds</a>
+                      </h2>
                     </div>
-                </div>
-            </article>
-        </div>
-
-        <div class="carousel-cell hero-slider-1__item">
-            <article class="hero-slider-1__entry entry">
-                <div class="hero-slider-1__thumb-img-holder"
-                     style="background-image: url(img/layout/hero_4.jpg)">
+                    <a href="single-post-videos.html" class="thumb-url"></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-lg-6">
+                <article class="entry thumb thumb--size-1">
+                  <div class="entry__img-holder thumb__img-holder" style="background-image: url('img/content/hero/hero_post_18.jpg');">
                     <div class="bottom-gradient"></div>
-                </div>
-                <div class="hero-slider-1__thumb-text-holder">
-                    <div class="container">
-                        <h2 class="hero-slider-1__entry-title">
-                            <a href="single-post-music.html">abc</a>
-                        </h2>
+                    <div class="thumb-text-holder thumb-text-holder--4">
+                      <h2 class="thumb-entry-title">
+                        <a href="single-post-videos.html">People Who Take Cold Showers Take Fewer Sick Days, Study Finds</a>
+                      </h2>
                     </div>
-                </div>
-            </article>
-        </div>
-    </div> <!-- end flickity -->
-
-    <!-- Slider thumbs -->
-    <div class="carousel-thumbs-holder">
-        <div class="container">
-            <div id="flickity-thumbs" class="carousel-thumbs">
-                <div class="carousel-cell">
-                    <div class="carousel-thumbs__item">
-                        <div class="carousel-thumbs__img-holder">
-                            <img src="img/layout/hero_1.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-cell">
-                    <div class="carousel-thumbs__item">
-                        <div class="carousel-thumbs__img-holder">
-                            <img src="img/layout/hero_2.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-cell">
-                    <div class="carousel-thumbs__item">
-                        <div class="carousel-thumbs__img-holder">
-                            <img src="img/layout/hero_3.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-cell">
-                    <div class="carousel-thumbs__item">
-                        <div class="carousel-thumbs__img-holder">
-                            <img src="img/layout/hero_4.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> <!-- end hero slider -->
-
-<!-- Main Container -->
-<div class="main-container container content-box content-box--pt-108" id="main-container">
-
-    <!-- Tin tuc -->
-    <?php
-    $kq=$toeic->getTinTuc('vi');
-    
-    ?>
-
-    <section class="section mb-0">
-        <div class="title-wrap title-wrap--line title-wrap--pr">
-            <h3 class="section-title">TIN TỨC</h3>
-        </div>
-
-        <!-- Slider -->
-        <div id="owl-posts-3-items" class="owl-carousel owl-theme owl-carousel--arrows-outside">
-            <?php while($row=$kq->fetch_assoc()){?>
-            <article class="entry card card--1">
-                <div class="entry__img-holder card__img-holder">
-                    <a href="single-post-music.html">
-                        <div class="thumb-container thumb-70">
-                            <img data-src="<?=$row['AnhMinhHoa']?>" src="<?=$row['AnhMinhHoa']?>"
-                                 class="entry__img lazyload" alt="<?=$row['TieuDe']?>" title="<?=$row['TieuDe']?>"/>
-                            <div class="entry-date-label">
-                                <div class="entry-date-label__weekday"><?=date('D',strtotime($row['NgayTao']))?></div>
-                                <div class="entry-date-label__day"><?=date('d',strtotime($row['NgayTao']))?></div>
-                                <div class="entry-date-label__month"><?=date('M',strtotime($row['NgayTao']))?></div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="entry__body card__body">
-                    <div class="entry__header">
-                        <ul class="entry__meta">
-                            <li class="entry__meta-category">
-                                <a>News</a>
-                            </li>
-                        </ul>
-                        <h2 class="entry__title" style="white-space: nowrap;overflow:hidden;text-overflow:ellipsis;">
-                            <a href="single-post-music.html" title="<?=$row['TieuDe']?>"><?=$row['TieuDe']?></a>
-                        </h2>
-                        <ul class="entry__meta">
-                            <li class="entry__meta-author">
-                                <span>by</span>
-                                <a href="#"><?php $kqi= $toeic->getIdUser($row['NguoiTao']);$rowi=$kqi->fetch_assoc();echo $rowi['Ten'];?></a>
-                            </li>
-                            <li class="entry__meta-date">
-                                Jan 21, 2018
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
-            </article>
-            <?php }?>
-        </div> <!-- end slider -->
-
-    </section> <!-- end tin tuc -->
-
-
-    <!-- Ad Banner 970 -->
-    <div class="text-center pb-48">
-        <a href="#">
-            <img src="img/content/placeholder_970_1.jpg" alt="">
-        </a>
-    </div>
-
-    <!-- tin tieng anh -->
-    <?php
-    $kq=$toeic->getTinTuc('en');
-    ?>
-    <section class="section mb-24">
-        <div class="title-wrap title-wrap--line">
-            <h3 class="section-title">TIN TIẾNG ANH</h3>
-        </div>
-
-        <div class="row row-20">
-
-            <?php $row=$kq->fetch_assoc();?>
-            <div class="col-md-3">
-                <article class="entry">
-                    <div class="entry__img-holder">
-                        <a href="single-post-music.html">
-                            <div class="thumb-container thumb-65">
-                                <img data-src="<?=$row['AnhMinhHoa']?>"  src="<?=$row['AnhMinhHoa']?>"
-                                     class="entry__img lazyload" alt="">
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="entry__body">
-                        <div class="entry__header">
-                            <h2 class="entry__title">
-                                <a href="single-post-music.html"><?=$row['TieuDe']?></a>
-                            </h2>
-                            <ul class="entry__meta">
-                                <li class="entry__meta-author">
-                                    <span>by</span>
-                                    <a href="#"><?php $kq1= $toeic->getIdUser($row['NguoiTao']);$row1=$kq1->fetch_assoc();echo $row1['HoTen'];?></a>
-                                </li>
-                                <li class="entry__meta-date">
-                                    Jan 21, 2018
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="entry__excerpt">
-                            <p><?=$row['TomTat']?><p>
-                        </div>
-                    </div>
+                    <a href="single-post-videos.html" class="thumb-url"></a>
+                  </div>
                 </article>
-            </div>
+              </div>
+            </div> <!-- end row -->
 
-            <?php $row=$kq->fetch_assoc();?>
-            <div class="col-md-6">
-                <article class="entry thumb thumb--size-3 thumb--mb-20">
-                    <div class="entry__img-holder thumb__img-holder"
-                         style="background-image: url('<?=$row['AnhMinhHoa']?>');">
-                        <div class="bottom-gradient"></div>
-                        <div class="thumb-text-holder thumb-text-holder--2">
-                            <h2 class="thumb-entry-title">
-                                <a href="single-post-music.html"><?=$row['TieuDe']?></a>
-                            </h2>
-                            <ul class="entry__meta">
-                                <li class="entry__meta-views">
-                                    <i class="ui-eye"></i>
-                                    <span>1356</span>
-                                </li>
-                                <li class="entry__meta-comments">
-                                    <a href="#">
-                                        <i class="ui-chat-empty"></i>13
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <a href="single-post-music.html" class="thumb-url"></a>
-                    </div>
-                </article>
-            </div>
+          </div>          
 
-            <?php $row=$kq->fetch_assoc();?>
-            <div class="col-md-3">
-                <article class="entry">
-                    <div class="entry__img-holder">
-                        <a href="single-post-music.html">
-                            <div class="thumb-container thumb-65">
-                                <img data-src="<?=$row['AnhMinhHoa']?>" src="<?=$row['AnhMinhHoa']?>"
-                                     class="entry__img lazyload" alt="">
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="entry__body">
-                        <div class="entry__header">
-                            <h2 class="entry__title">
-                                <a href="single-post-music.html"><?=$row['TieuDe']?></a>
-                            </h2>
-                            <ul class="entry__meta">
-                                <li class="entry__meta-author">
-                                    <span>by</span>
-                                    <a href="#"><?php $kq1= $toeic->getIdUser($row['NguoiTao']);$row1=$kq1->fetch_assoc();echo $row1['HoTen'];?></a>
-                                </li>
-                                <li class="entry__meta-date">
-                                    Jan 21, 2018
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="entry__excerpt">
-                            <p><?=$row['TomTat']?></p>
-                        </div>
-                    </div>
-                </article>
-            </div>
         </div>
-
-        <div class="row row-20">
-
-            <?php $row=$kq->fetch_assoc();?>
-            <div class="col-md-6">
-                <article class="entry thumb thumb--size-3 thumb--mb-20">
-                    <div class="entry__img-holder thumb__img-holder"
-                         style="background-image: url('<?=$row['AnhMinhHoa']?>');">
-                        <div class="bottom-gradient"></div>
-                        <div class="thumb-text-holder thumb-text-holder--2">
-                            <h2 class="thumb-entry-title">
-                                <a href="single-post-music.html"><?=$row['TieuDe']?></a>
-                            </h2>
-                            <ul class="entry__meta">
-                                <li class="entry__meta-views">
-                                    <i class="ui-eye"></i>
-                                    <span>1356</span>
-                                </li>
-                                <li class="entry__meta-comments">
-                                    <a href="#">
-                                        <i class="ui-chat-empty"></i>13
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <a href="single-post-music.html" class="thumb-url"></a>
-                    </div>
-                </article>
-            </div>
-
-            <?php $row=$kq->fetch_assoc();?>
-            <div class="col-md-3">
-                <article class="entry">
-                    <div class="entry__img-holder">
-                        <a href="single-post-music.html">
-                            <div class="thumb-container thumb-65">
-                                <img data-src="<?=$row['AnhMinhHoa']?>" src="<?=$row['AnhMinhHoa']?>"
-                                     class="entry__img lazyload" alt="">
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="entry__body">
-                        <div class="entry__header">
-                            <h2 class="entry__title">
-                                <a href="single-post-music.html"><?=$row['TieuDe']?></a>
-                            </h2>
-                            <ul class="entry__meta">
-                                <li class="entry__meta-author">
-                                    <span>by</span>
-                                    <a href="#"><?php $kq1= $toeic->getIdUser($row['NguoiTao']);$row1=$kq1->fetch_assoc();echo $row1['HoTen'];?></a>
-                                </li>
-                                <li class="entry__meta-date">
-                                    Jan 21, 2018
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="entry__excerpt">
-                            <p><?=$row['TomTat']?></p>
-                        </div>
-                    </div>
-                </article>
-            </div>
-
-            <?php $row=$kq->fetch_assoc();?>
-            <div class="col-md-3">
-                <article class="entry">
-                    <div class="entry__img-holder">
-                        <a href="single-post-music.html">
-                            <div class="thumb-container thumb-65">
-                                <img data-src="<?=$row['AnhMinhHoa']?>" src="<?=$row['AnhMinhHoa']?>"
-                                     class="entry__img lazyload" alt="">
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="entry__body">
-                        <div class="entry__header">
-                            <h2 class="entry__title">
-                                <a href="single-post-music.html"><?=$row['TieuDe']?></a>
-                            </h2>
-                            <ul class="entry__meta">
-                                <li class="entry__meta-author">
-                                    <span>by</span>
-                                    <a href="#"><?php $kq1= $toeic->getIdUser($row['NguoiTao']);$row1=$kq1->fetch_assoc();echo $row1['HoTen'];?></a>
-                                </li>
-                                <li class="entry__meta-date">
-                                    Jan 21, 2018
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="entry__excerpt">
-                            <p><?=$row['TomTat']?></p>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section> <!-- end tin tieng anh -->
-
-    <!-- Bai giang Videos -->
-    <section class="pb-32">
-        <div class="title-wrap title-wrap--line">
-            <h2 class="section-title">BÀI GIẢNG</h2>
+      </div>
+    </section> <!-- end featured posts grid -->
+    <!-- Newest Videos -->
+    <section class="bg-light pt-32 pb-32">
+      <div class="container">
+        <div class="title-wrap">
+          <h2 class="section-title">newest videos</h2>
         </div>
         <div class="video-playlist">
 
-            <div class="video-playlist__content thumb-container">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe src="https://www.youtube.com/embed/E0wW9RwpG7M?feature=oembed"
-                            class="video-playlist__content-video">
-                    </iframe>
-                </div>
+          <div class="video-playlist__content thumb-container">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe src="https://www.youtube.com/embed/SVnhBjRMlKA?feature=oembed" class="video-playlist__content-video">
+              </iframe>
             </div>
+          </div>
 
-            <div class="video-playlist__list">
-                <a href="https://www.youtube.com/embed/E0wW9RwpG7M?feature=oembed&autoplay=1"
-                   class="video-playlist__list-item video-playlist__list-item--active">
-                    <div class="video-playlist__list-item-thumb">
-                        <img data-src="https://i.ytimg.com/vi/E0wW9RwpG7M/default.jpg"
-                             src="https://i.ytimg.com/vi/E0wW9RwpG7M/default.jpg"
-                             class="video-playlist__list-item-img lazyload" alt="">
-                    </div>
-                    <div class="video-playlist__list-item-description">
-                        <h4 class="video-playlist__list-item-title">Heaven - Bryan Adams (cover) Megan Nicole
-                            and
-                            Boyce Avenue</h4>
-                    </div>
-                </a>
-                <a href="https://www.youtube.com/embed/7TWkmy5ELJc?feature=oembed&autoplay=1"
-                   class="video-playlist__list-item">
-                    <div class="video-playlist__list-item-thumb">
-                        <img data-src="https://i.ytimg.com/vi/7TWkmy5ELJc/default.jpg"
-                             src="https://i.ytimg.com/vi/mn6Ia5e_suY/default.jpg"
-                             class="video-playlist__list-item-img lazyload" alt="">
-                    </div>
-                    <div class="video-playlist__list-item-description">
-                        <h4 class="video-playlist__list-item-title">Santa Cruz - Young Blood Rising (Official
-                            Music
-                            Video)</h4>
-                    </div>
-                </a>
-                <a href="https://www.youtube.com/embed/hXnMSaK6C2w?feature=oembed&autoplay=1"
-                   class="video-playlist__list-item">
-                    <div class="video-playlist__list-item-thumb">
-                        <img data-src="https://i.ytimg.com/vi/hXnMSaK6C2w/default.jpg"
-                             src="https://i.ytimg.com/vi/mn6Ia5e_suY/default.jpg"
-                             class="video-playlist__list-item-img lazyload" alt="">
-                    </div>
-                    <div class="video-playlist__list-item-description">
-                        <h4 class="video-playlist__list-item-title">Cardi B - Bartier Cardi (feat. 21 Savage)
-                            [Official Video]</h4>
-                    </div>
-                </a>
-                <a href="https://www.youtube.com/embed/xMTsul4UFl8?feature=oembed&autoplay=1"
-                   class="video-playlist__list-item">
-                    <div class="video-playlist__list-item-thumb">
-                        <img data-src="https://i.ytimg.com/vi/xMTsul4UFl8/default.jpg"
-                             src="https://i.ytimg.com/vi/mn6Ia5e_suY/default.jpg"
-                             class="video-playlist__list-item-img lazyload" alt="">
-                    </div>
-                    <div class="video-playlist__list-item-description">
-                        <h4 class="video-playlist__list-item-title">Nothing Makes Sense Anymore (Official Video)
-                            -
-                            Mike Shinoda</h4>
-                    </div>
-                </a>
-                <a href="https://www.youtube.com/embed/2Vv-BfVoq4g?feature=oembed&autoplay=1"
-                   class="video-playlist__list-item">
-                    <div class="video-playlist__list-item-thumb">
-                        <img data-src="https://i.ytimg.com/vi/2Vv-BfVoq4g/default.jpg"
-                             src="https://i.ytimg.com/vi/mn6Ia5e_suY/default.jpg"
-                             class="video-playlist__list-item-img lazyload" alt="">
-                    </div>
-                    <div class="video-playlist__list-item-description">
-                        <h4 class="video-playlist__list-item-title">Ed Sheeran - Perfect (Official Music
-                            Video)</h4>
-                    </div>
-                </a>
-            </div>
+          <div class="video-playlist__list">
+            <a href="https://www.youtube.com/embed/SVnhBjRMlKA?feature=oembed&autoplay=1" class="video-playlist__list-item video-playlist__list-item--active">
+              <div class="video-playlist__list-item-thumb">
+                <img data-src="https://i.ytimg.com/vi/SVnhBjRMlKA/default.jpg" src="https://i.ytimg.com/vi/SVnhBjRMlKA/default.jpg" class="video-playlist__list-item-img lazyload" alt="">
+              </div>
+              <div class="video-playlist__list-item-description">
+                <h4 class="video-playlist__list-item-title">Top 5 New Tech Gadgets You Must Have In 2017</h4>
+              </div>
+            </a>
+            <a href="https://www.youtube.com/embed/x68XnWszi2A?feature=oembed&autoplay=1" class="video-playlist__list-item">
+              <div class="video-playlist__list-item-thumb">
+                <img data-src="https://i.ytimg.com/vi/x68XnWszi2A/default.jpg" src="https://i.ytimg.com/vi/mn6Ia5e_suY/default.jpg" class="video-playlist__list-item-img lazyload" alt="">
+              </div>
+              <div class="video-playlist__list-item-description">
+                <h4 class="video-playlist__list-item-title">10 Amazing Gadgets You Can Buy Now On Amazon</h4>
+              </div>
+            </a>
+            <a href="https://www.youtube.com/embed/TXFrCy47ue8?feature=oembed&autoplay=1" class="video-playlist__list-item">
+              <div class="video-playlist__list-item-thumb">
+                <img data-src="https://i.ytimg.com/vi/TXFrCy47ue8/default.jpg" src="https://i.ytimg.com/vi/mn6Ia5e_suY/default.jpg" class="video-playlist__list-item-img lazyload" alt="">
+              </div>
+              <div class="video-playlist__list-item-description">
+                <h4 class="video-playlist__list-item-title">Top 5 Best Drones with HD Camera (Cheap and Affordable Version)</h4>
+              </div>
+            </a>
+            <a href="https://www.youtube.com/embed/rdFXddVsUuQ?feature=oembed&autoplay=1" class="video-playlist__list-item">
+              <div class="video-playlist__list-item-thumb">
+                <img data-src="https://i.ytimg.com/vi/rdFXddVsUuQ/default.jpg" src="https://i.ytimg.com/vi/mn6Ia5e_suY/default.jpg" class="video-playlist__list-item-img lazyload" alt="">
+              </div>
+              <div class="video-playlist__list-item-description">
+                <h4 class="video-playlist__list-item-title">iPhone X Review – Pushing Me to Android</h4>
+              </div>
+            </a>
+            <a href="https://www.youtube.com/embed/MY0UBGX2FtA?feature=oembed&autoplay=1" class="video-playlist__list-item">
+              <div class="video-playlist__list-item-thumb">
+                <img data-src="https://i.ytimg.com/vi/MY0UBGX2FtA/default.jpg" src="https://i.ytimg.com/vi/mn6Ia5e_suY/default.jpg" class="video-playlist__list-item-img lazyload" alt="">
+              </div>
+              <div class="video-playlist__list-item-description">
+                <h4 class="video-playlist__list-item-title">iPhone X Review – Pushing Me to Android</h4>
+              </div>
+            </a>
+          </div>
 
         </div>
-    </section> <!-- end bai giang videos -->
+      </div>      
+    </section> <!-- end newest videos -->
+    
+        <!-- Ad Banner 728 -->
+    <div class="text-center pt-48 pb-24">
+      <a href="#">
+        <img src="img/content/placeholder_728.jpg" alt="">
+      </a>
+    </div>
 
-    <!-- De thi thu -->
-    <section class="section mb-0">
+<!-- start ham main  -->
+    <div class="main-container container pt-24" id="main-container">
+
+      <!-- Content -->
+      <div class="row">
+
+        <!-- Posts -->
+        <div class="col-lg-8 blog__content">
+          
+          <!-- Popular Videos -->
+          <section class="section">
+            <div class="title-wrap title-wrap--line">
+              <h3 class="section-title">Popular Videos</h3>
+            </div>
+
+            <!-- Large Post -->
+            <article class="entry thumb thumb--size-5 thumb--mb-20">
+              <div class="entry__img-holder thumb__img-holder" style="background-image: url('img/content/thumb/thumb_post_5.jpg');">
+                <div class="bottom-gradient"></div>
+                <div class="thumb-text-holder thumb-text-holder--3">
+                  <a href="categories.html" class="entry__meta-category entry__meta-category--label entry__meta-category--violet">World</a>
+                  <h2 class="thumb-entry-title">
+                    <a href="single-post-videos.html">6 Personal Fears Holding You Back From Your Dream Career</a>
+                  </h2>
+                  <div class="entry__meta-holder">
+                    <ul class="entry__meta">
+                      <li class="entry__meta-author">
+                        <span>by</span>
+                        <a href="#">DeoThemes</a>
+                      </li>
+                      <li class="entry__meta-date">
+                        Jan 21, 2018
+                      </li>
+                    </ul>
+                    <ul class="entry__meta">
+                      <li class="entry__meta-views">
+                        <i class="ui-eye"></i>
+                        <span>1356</span>
+                      </li>
+                      <li class="entry__meta-comments">
+                        <a href="#">
+                          <i class="ui-chat-empty"></i>13
+                        </a>
+                      </li>
+                    </ul>
+                  </div>                  
+                </div>
+                <a href="single-post-videos.html" class="thumb-url"></a>
+              </div>
+            </article>
+
+            <div class="row row-20">
+              <div class="col-md-4">
+                <article class="entry">
+                  <div class="entry__img-holder">
+                    <a href="single-post-videos.html">
+                      <div class="thumb-container thumb-65">
+                        <img data-src="img/content/grid/grid_post_27.jpg" src="img/empty.png" class="entry__img lazyload" alt="" />
+                        <div class="play-btn"></div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="entry__body">
+                    <div class="entry__header">                      
+                      <h2 class="entry__title entry__title--sm">
+                        <a href="single-post-videos.html">How to Bounce Back After a Business Venture Fails</a>
+                      </h2>
+                      <ul class="entry__meta">
+                        <li class="entry__meta-author">
+                          <span>by</span>
+                          <a href="#">DeoThemes</a>
+                        </li>
+                        <li class="entry__meta-date">
+                          Jan 21, 2018
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-4">
+                <article class="entry">
+                  <div class="entry__img-holder">
+                    <a href="single-post-videos.html">
+                      <div class="thumb-container thumb-65">
+                        <img data-src="img/content/grid/grid_post_28.jpg" src="img/empty.png" class="entry__img lazyload" alt="" />
+                        <div class="play-btn"></div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="entry__body">
+                    <div class="entry__header">                      
+                      <h2 class="entry__title entry__title--sm">
+                        <a href="single-post-videos.html">How to Bounce Back After a Business Venture Fails</a>
+                      </h2>
+                      <ul class="entry__meta">
+                        <li class="entry__meta-author">
+                          <span>by</span>
+                          <a href="#">DeoThemes</a>
+                        </li>
+                        <li class="entry__meta-date">
+                          Jan 21, 2018
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-4">
+                <article class="entry">
+                  <div class="entry__img-holder">
+                    <a href="single-post-videos.html">
+                      <div class="thumb-container thumb-65">
+                        <img data-src="img/content/grid/grid_post_29.jpg" src="img/empty.png" class="entry__img lazyload" alt="" />
+                        <div class="play-btn"></div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="entry__body">
+                    <div class="entry__header">                      
+                      <h2 class="entry__title entry__title--sm">
+                        <a href="single-post-videos.html">How to Bounce Back After a Business Venture Fails</a>
+                      </h2>
+                      <ul class="entry__meta">
+                        <li class="entry__meta-author">
+                          <span>by</span>
+                          <a href="#">DeoThemes</a>
+                        </li>
+                        <li class="entry__meta-date">
+                          Jan 21, 2018
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-4">
+                <article class="entry">
+                  <div class="entry__img-holder">
+                    <a href="single-post-videos.html">
+                      <div class="thumb-container thumb-65">
+                        <img data-src="img/content/grid/grid_post_30.jpg" src="img/empty.png" class="entry__img lazyload" alt="" />
+                        <div class="play-btn"></div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="entry__body">
+                    <div class="entry__header">                      
+                      <h2 class="entry__title entry__title--sm">
+                        <a href="single-post-videos.html">How to Bounce Back After a Business Venture Fails</a>
+                      </h2>
+                      <ul class="entry__meta">
+                        <li class="entry__meta-author">
+                          <span>by</span>
+                          <a href="#">DeoThemes</a>
+                        </li>
+                        <li class="entry__meta-date">
+                          Jan 21, 2018
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-4">
+                <article class="entry">
+                  <div class="entry__img-holder">
+                    <a href="single-post-videos.html">
+                      <div class="thumb-container thumb-65">
+                        <img data-src="img/content/grid/grid_post_31.jpg" src="img/empty.png" class="entry__img lazyload" alt="" />
+                        <div class="play-btn"></div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="entry__body">
+                    <div class="entry__header">                      
+                      <h2 class="entry__title entry__title--sm">
+                        <a href="single-post-videos.html">How to Bounce Back After a Business Venture Fails</a>
+                      </h2>
+                      <ul class="entry__meta">
+                        <li class="entry__meta-author">
+                          <span>by</span>
+                          <a href="#">DeoThemes</a>
+                        </li>
+                        <li class="entry__meta-date">
+                          Jan 21, 2018
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-4">
+                <article class="entry">
+                  <div class="entry__img-holder">
+                    <a href="single-post-videos.html">
+                      <div class="thumb-container thumb-65">
+                        <img data-src="img/content/grid/grid_post_32.jpg" src="img/empty.png" class="entry__img lazyload" alt="" />
+                        <div class="play-btn"></div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="entry__body">
+                    <div class="entry__header">                      
+                      <h2 class="entry__title entry__title--sm">
+                        <a href="single-post-videos.html">How to Bounce Back After a Business Venture Fails</a>
+                      </h2>
+                      <ul class="entry__meta">
+                        <li class="entry__meta-author">
+                          <span>by</span>
+                          <a href="#">DeoThemes</a>
+                        </li>
+                        <li class="entry__meta-date">
+                          Jan 21, 2018
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <!-- Load More -->
+            <button class="btn btn-lg btn-stroke btn-wide load-more">
+              <span>Load More <i class="ui-arrow-down"></i></span>
+            </button>        
+           
+          </section> <!-- end popular videos -->
+
+        </div> <!-- end posts -->
+
+        <!-- Sidebar -->
+        <aside class="col-lg-4 sidebar sidebar--right">
+
+          <!-- Widget Recommended (Rating) -->
+          <aside class="widget widget-rating-posts">
+            <h4 class="widget-title">Recommended</h4>
+            <article class="entry">
+              <div class="entry__img-holder">
+                <a href="single-post-videos.html">
+                  <div class="thumb-container thumb-60">
+                    <img data-src="img/content/review/review_post_1.jpg" src="img/empty.png" class="entry__img lazyload" alt="">
+                  </div>
+                </a>
+              </div>
+
+              <div class="entry__body">
+                <div class="entry__header">
+                  
+                  <h2 class="entry__title">
+                    <a href="single-post-videos.html">UN’s WFP Building Up Blockchain-Based Payments System</a>
+                  </h2>
+                  <ul class="entry__meta">
+                    <li class="entry__meta-author">
+                      <span>by</span>
+                      <a href="#">DeoThemes</a>
+                    </li>
+                    <li class="entry__meta-date">
+                      Jan 21, 2018
+                    </li>
+                  </ul>
+                  <ul class="entry__meta">
+                    <li class="entry__meta-rating">
+                      <i class="ui-star"></i><!--
+                      --><i class="ui-star"></i><!--
+                      --><i class="ui-star"></i><!--
+                      --><i class="ui-star"></i><!--
+                      --><i class="ui-star-empty"></i>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+            <ul class="post-list-small post-list-small--2">
+              <li class="post-list-small__item">
+                <article class="post-list-small__entry clearfix">
+                  <div class="post-list-small__img-holder">
+                    <div class="thumb-container thumb-70">
+                      <a href="single-post-videos.html">
+                        <img data-src="img/content/post_small/post_small_41.jpg" src="img/empty.png" alt="" class=" lazyload">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="post-list-small__body">
+                    <h3 class="post-list-small__entry-title">
+                      <a href="single-post-videos.html">Deep Rock Galactic Is A Cooperative Blast</a>
+                    </h3>
+                  </div>                  
+                </article>
+              </li>
+              <li class="post-list-small__item">
+                <article class="post-list-small__entry clearfix">
+                  <div class="post-list-small__img-holder">
+                    <div class="thumb-container thumb-70">
+                      <a href="single-post-videos.html">
+                        <img data-src="img/content/post_small/post_small_42.jpg" src="img/empty.png" alt="" class=" lazyload">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="post-list-small__body">
+                    <h3 class="post-list-small__entry-title">
+                      <a href="single-post-videos.html">Deep Rock Galactic Is A Cooperative Blast</a>
+                    </h3>
+                  </div>                  
+                </article>
+              </li>
+              <li class="post-list-small__item">
+                <article class="post-list-small__entry clearfix">
+                  <div class="post-list-small__img-holder">
+                    <div class="thumb-container thumb-70">
+                      <a href="single-post-videos.html">
+                        <img data-src="img/content/post_small/post_small_43.jpg" src="img/empty.png" alt="" class=" lazyload">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="post-list-small__body">
+                    <h3 class="post-list-small__entry-title">
+                      <a href="single-post-videos.html">Amnesty says global superpowers are 'callously undermining the rights of millions'</a>
+                    </h3>
+                  </div>                  
+                </article>
+              </li>
+              <li class="post-list-small__item">
+                <article class="post-list-small__entry clearfix">
+                  <div class="post-list-small__img-holder">
+                    <div class="thumb-container thumb-70">
+                      <a href="single-post-videos.html">
+                        <img data-src="img/content/post_small/post_small_44.jpg" src="img/empty.png" alt="" class=" lazyload">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="post-list-small__body">
+                    <h3 class="post-list-small__entry-title">
+                      <a href="single-post-videos.html">Extreme Heat Waves Will Change How We Live. We’re Not Ready</a>
+                    </h3>
+                  </div>                  
+                </article>
+              </li>
+            </ul>
+          </aside> <!-- end widget recommended (rating) -->
+          
+          <!-- Widget Ad 300 -->
+          <aside class="widget widget_media_image">
+            <a href="#">
+              <img src="img/content/placeholder_336.jpg" alt="">
+            </a>
+          </aside> <!-- end widget ad 300 -->
+
+        </aside> <!-- end sidebar -->
+  
+      </div> <!-- end content -->
+
+
+      <!-- Carousel posts -->
+      <section class="section mb-0">
         <div class="title-wrap title-wrap--line title-wrap--pr">
-            <h3 class="section-title">ĐỀ THI THỬ</h3>
+          <h3 class="section-title">featured videos</h3>
         </div>
 
         <!-- Slider -->
         <div id="owl-posts" class="owl-carousel owl-theme owl-carousel--arrows-outside">
-            <article class="entry thumb thumb--size-1">
-                <div class="entry__img-holder thumb__img-holder"
-                     style="background-image: url('img/logo.dethi.jpeg');">
-                    <div class="bottom-gradient"></div>
-                    <div class="thumb-text-holder">
-                        <h2 class="thumb-entry-title">
-                            <a href="single-post-music.html"><strong>ĐỀ THI SỐ 01</strong></a>
-                        </h2>
-                    </div>
-                    <a href="single-post-music.html" class="thumb-url"></a>
-                </div>
-            </article>
-
-            <article class="entry thumb thumb--size-1">
-                <div class="entry__img-holder thumb__img-holder"
-                     style="background-image: url('img/logo.dethi.jpeg');">
-                    <div class="bottom-gradient"></div>
-                    <div class="thumb-text-holder">
-                        <h2 class="thumb-entry-title">
-                            <a href="single-post-music.html"><strong>ĐỀ THI SỐ 02</strong></a>
-                        </h2>
-                    </div>
-                    <a href="single-post-music.html" class="thumb-url"></a>
-                </div>
-            </article>
-
-            <article class="entry thumb thumb--size-1">
-                <div class="entry__img-holder thumb__img-holder"
-                     style="background-image: url('img/logo.dethi.jpeg');">
-                    <div class="bottom-gradient"></div>
-                    <div class="thumb-text-holder">
-                        <h2 class="thumb-entry-title">
-                            <a href="single-post-music.html"><strong>ĐỀ THI SỐ 03</strong></a>
-                        </h2>
-                    </div>
-                    <a href="single-post-music.html" class="thumb-url"></a>
-                </div>
-            </article>
-
-            <article class="entry thumb thumb--size-1">
-                <div class="entry__img-holder thumb__img-holder"
-                     style="background-image: url('img/logo.dethi.jpeg');">
-                    <div class="bottom-gradient"></div>
-                    <div class="thumb-text-holder">
-                        <h2 class="thumb-entry-title">
-                            <a href="single-post-music.html"><strong>ĐỀ THI SỐ 04</strong></a>
-                        </h2>
-                    </div>
-                    <a href="single-post-music.html" class="thumb-url"></a>
-                </div>
-            </article>
-
-            <article class="entry thumb thumb--size-1">
-                <div class="entry__img-holder thumb__img-holder"
-                     style="background-image: url('img/content/carousel/carousel_post_17.jpg');">
-                    <div class="bottom-gradient"></div>
-                    <div class="thumb-text-holder">
-                        <h2 class="thumb-entry-title">
-                            <a href="single-post-music.html"><strong>ĐỀ THI SỐ 05</strong></a>
-                        </h2>
-                    </div>
-                    <a href="single-post-music.html" class="thumb-url"></a>
-                </div>
-            </article>
+          <article class="entry thumb thumb--size-1">
+            <div class="entry__img-holder thumb__img-holder" style="background-image: url('img/content/carousel/carousel_post_9.jpg');">
+              <div class="bottom-gradient"></div>
+              <div class="thumb-text-holder">   
+                <h2 class="thumb-entry-title">
+                  <a href="single-post-videos.html">6 Personal Fears Holding You Back From Your Dream Career</a>
+                </h2>
+              </div>
+              <a href="single-post-videos.html" class="thumb-url"></a>
+            </div>
+          </article>
+          <article class="entry thumb thumb--size-1">
+            <div class="entry__img-holder thumb__img-holder" style="background-image: url('img/content/carousel/carousel_post_10.jpg');">
+              <div class="bottom-gradient"></div>
+              <div class="thumb-text-holder">   
+                <h2 class="thumb-entry-title">
+                  <a href="single-post-videos.html">Want to be More Successful? Go to Bed</a>
+                </h2>
+              </div>
+              <a href="single-post-videos.html" class="thumb-url"></a>
+            </div>
+          </article>
+          <article class="entry thumb thumb--size-1">
+            <div class="entry__img-holder thumb__img-holder" style="background-image: url('img/content/carousel/carousel_post_11.jpg');">
+              <div class="bottom-gradient"></div>
+              <div class="thumb-text-holder">   
+                <h2 class="thumb-entry-title">
+                  <a href="single-post-videos.html">Your Brand Plan Is More Important Than Your Business</a>
+                </h2>
+              </div>
+              <a href="single-post-videos.html" class="thumb-url"></a>
+            </div>
+          </article>
+          <article class="entry thumb thumb--size-1">
+            <div class="entry__img-holder thumb__img-holder" style="background-image: url('img/content/carousel/carousel_post_12.jpg');">
+              <div class="bottom-gradient"></div>
+              <div class="thumb-text-holder">   
+                <h2 class="thumb-entry-title">
+                  <a href="single-post-videos.html">6 Tell-Tale Signs You're Underpaid</a>
+                </h2>
+              </div>
+              <a href="single-post-videos.html" class="thumb-url"></a>
+            </div>
+          </article>
+          <article class="entry thumb thumb--size-1">
+            <div class="entry__img-holder thumb__img-holder" style="background-image: url('img/content/carousel/carousel_post_10.jpg');">              
+              <div class="bottom-gradient"></div>
+              <div class="thumb-text-holder">   
+                <h2 class="thumb-entry-title">
+                  <a href="single-post-videos.html">Want to be More Successful? Go to Bed</a>
+                </h2>
+              </div>
+              <a href="single-post-videos.html" class="thumb-url"></a>
+            </div>
+          </article>
         </div> <!-- end slider -->
 
-    </section> <!-- end de thi thu -->
+      </section> <!-- end carousel posts -->
 
-</div> <!-- end main container -->
+    </div> <!-- end main container -->
+
+<!-- end ham main -->
+
+     </div>
+     
 
