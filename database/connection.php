@@ -29,7 +29,6 @@ class connection
 
     public function execute_no_return($sql)
     {
-        $this->connect();
         $this->con->query($sql);
     }
 

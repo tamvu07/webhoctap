@@ -13,6 +13,20 @@ if(isset($_GET['p'])){
     {
         include "Register.php";
     }
+        if($p=="main")
+    {
+        include "main.php";
+    }
+
+        if($p=="gioithieu")
+    {
+        include "gioithieu.php";
+    }
+
+        if($p=="lienhe")
+    {
+        include "lienhe.php";
+    }
 
 
 }

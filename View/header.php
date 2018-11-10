@@ -68,10 +68,10 @@ if (!isset($_SESSION['login_id']) && $_SERVER['REQUEST_URI'] != "/ToeicThi/View/
                 
                     <!-- Categories -->
                     <li>
-                        <a href="#" class="sidenav__menu-url">Liên hệ</a>
+                        <a href="View/lienhe.html" class="sidenav__menu-url">Liên hệ</a>
                     </li>
                     <li>
-                        <a href="#" class="sidenav__menu-url">Giới thiệu</a>
+                        <a href="View/gioithieu.html" class="sidenav__menu-url">Giới thiệu</a>
                     </li>
                     <li>
                         <a href="View/Login.html" class="sidenav__menu-url">Đăng nhập</a>
@@ -165,10 +165,10 @@ if (!isset($_SESSION['login_id']) && $_SERVER['REQUEST_URI'] != "/ToeicThi/View/
                     </li>
                     
                     <li>
-                        <a href="#">Liên hệ</a>
+                        <a href="View/lienhe.html">Liên hệ</a>
                     </li>
                     <li>
-                        <a href="#">giới thiệu</a>
+                        <a href="View/gioithieu.html">giới thiệu</a>
                     </li>
                 </ul> <!-- end menu -->
             </nav> <!-- end nav-wrap -->

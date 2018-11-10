@@ -21,7 +21,7 @@ if(isset($_GET['username_login']) && isset($_GET['password_login']) ){
         else if($username != ""){
             $kq = $toeic->login_check_password_username($username,$password);
             if($kq != 0){
-                $_SESSION['login'] = $_GET['username_login'];
+                $_SESSION['username_login'] = $_GET['username_login'];
                 echo 0;
                 return;
             }else{

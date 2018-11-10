@@ -94,7 +94,7 @@ if (!isset($_SESSION['login_id']) && $_SERVER['REQUEST_URI'] != "/ToeicThi/View/
                         <a href="#" class="sidenav__menu-url">Giới thiệu</a>
                     </li>
                     <li>
-                        <a href="View/Login.html" class="sidenav__menu-url">Đăng nhập</a>
+                        <a href="View/main.html" class="sidenav__menu-url">Đăng Xuất</a>
                     </li>
                     <li>
                         <a href="#" class="sidenav__menu-url">Đăng kí</a>
@@ -126,8 +126,8 @@ if (!isset($_SESSION['login_id']) && $_SERVER['REQUEST_URI'] != "/ToeicThi/View/
                     <!-- Socials -->
                     <div class="col-lg-12">
                         <div id="top-sign-in-out">
-                            <a class="btn btn-sm btn-light" href="View/Login.html" onfocus="false">
-                                <span>Đăng nhập</span>
+                            <a class="btn btn-sm btn-light" href="View/main.html" onfocus="false">
+                                <span>Đăng Xuất</span>
                             </a>
                             <a  class="btn btn-sm btn-light" href="View/Register.html" onfocus="false">
                                 <span>Đăng kí</span>
@@ -251,9 +251,9 @@ if (!isset($_SESSION['login_id']) && $_SERVER['REQUEST_URI'] != "/ToeicThi/View/
                     </li>
                    
  
-                    <li>
+<!--                     <li>
                         <a href="#">LIÊN HỆ</a>
-                    </li>
+                    </li> -->
                 
                 </ul> <!-- end menu -->
             </nav> <!-- end nav-wrap -->

@@ -1,4 +1,4 @@
-<?php require_once("header_student.php");?>
+<?php require_once("header_student.php"); ?>
     <!-- Hero Slider -->
     <section class="hero-slider">
       <div id="owl-hero-slider" class="owl-carousel owl-theme">

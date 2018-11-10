@@ -23,10 +23,10 @@ $t = new controller_lambaithi();
  
     font-size: 78px;
     font-weight: bold;
-    width: 180px;
+    width: 241px;
     border-radius: 10px;
     background-image: linear-gradient(141deg, #6367ec 0%, #f8f9fa 51%, hsl(69, 83%, 61%) 75%);
-    margin-left: 65%;
+    margin-left: 40%;
     color: red;
     padding-left: 45px;
 }
@@ -62,6 +62,7 @@ input[type="radio"] + label {
     <div id="test-title" class="col-md-8">
        <div id="countdown-timer"></div>
     </div>
+        <div id="countdown-timer"><span id="m" name="m">5</span>:<span id="s" name="s">00</span></div>
 <!-- end dong ho -->
 
     <div class="main-container container" id="main-container" style="    background-color: #fff; ">    
@@ -77,6 +78,12 @@ input[type="radio"] + label {
     				$monhoc = $_REQUEST['monhoc'];
                     $array_cautraloi_DB = array();
     				$array_cautraloi_DB = $t->gettest($monhoc,$test);
+                    /*bat dau dem phan tu trong mang cau hoi*/
+                            $n = 0;
+                            foreach ($array_cautraloi_DB as $key => $value){
+                            ++$n;
+                            }
+                    /*ket thuc dem phan tu trong mang*/
 
     				?>
 <button type="submit" name="nut" id="nut" value="chambai" class="btn btn-primary btn-block">CHAM BAI</button>
@@ -85,7 +92,7 @@ input[type="radio"] + label {
 
 $array_cautraloi = array();
 $i = 1;
-        while($i < 3)
+        while($i <= $n)
         {
               $tam = "cauhoiso".$i;
               $array_cautraloi[$i] = isset($_POST[$tam]) ? $_POST[$tam]: "";
@@ -98,16 +105,18 @@ $i = 1;
     {
     /*start xu ly cac cau tra loi*/
         $i = 1;
-        while($i < 3)
+        while($i < $n)
         {
             $tam = "cauhoiso".$i;
              $array_cautraloi[$i] = isset($_POST[$tam]) ? $_POST[$tam]: "";
-             echo "".$i."la : ".$array_cautraloi[$i]."<br>";
+             /*echo "".$i."la : ".$array_cautraloi[$i]."<br>";*/
             $i++;
         }
 
              $diem = $t->chamdiem($array_cautraloi,$array_cautraloi_DB);
              session_start();
+              $_SESSION['test'] = $test;
+                $_SESSION['monhoc'] = $monhoc;
              $_SESSION['diem'] = $diem;
              header('location:chamdiem.php');
 
@@ -139,18 +148,34 @@ $i = 1;
 
 
     <script type="text/javascript">
-        var so = 30;
+        var m = 5;
+        var s = 0;
         function demnguoc()
         {
-            so--;
-            if(so != 0)
+           s = s - 1;
+           if(s == -1)
+           {
+            s = 59;
+           }
+            if(m == -1)
             {
-                document.getElementById("countdown-timer").innerHTML= so;
+                m = 0;
+            }
+            if(s != 0)
+            {
+                document.getElementById("s").innerHTML= s;
                 setTimeout("demnguoc()",1000);
-            }else if(so == 0) {
-                document.getElementById("countdown-timer").innerHTML = "00";
+            }else if(s == 0 && m == 0) {
+               
+
                 document.getElementById("nut").click();
+                /*document.getElementById("nut").click();*/
                  /* setTimeout("chuyentrang()",1000);*/
+            }else if( s == 0){
+                 m = m - 1;
+                 document.getElementById("s").innerHTML= 0;
+                document.getElementById("m").innerHTML = m ;
+                setTimeout("demnguoc()",1000); 
             }
         }
 

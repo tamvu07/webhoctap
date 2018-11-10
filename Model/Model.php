@@ -119,6 +119,7 @@ class model extends connection
             if ($kq->num_rows != 0) {
               while($rows =$kq->fetch_assoc()){
                 $_SESSION['NguoiDung'] = $rows['NguoiDung'];
+                $_SESSION['ID'] = $rows['ID'];
             }
             return 1;
             } else return 0;
@@ -138,6 +139,142 @@ class model extends connection
             /*return $this->con->error();*/
             return 0;
         }
+    }
+
+    function test_id_user_DB($username,$password)
+    {
+            $username = $this->con->escape_string(trim(strip_tags($username)));
+            $password = $this->con->escape_string(trim(strip_tags($password)));
+            $sql = "select ID from taikhoan where HoTen = '$username' and MatKhau = '$password' ";
+            $kq = $this->con->query($sql);
+
+            if ($kq->num_rows != 0) {
+              while($rows =$kq->fetch_assoc()){
+                $_SESSION['NguoiDung'] = $rows['ID'];
+            }
+            return 1;
+            } else {
+                return 0;
+            }
+
+    }
+
+/*bat dau luu diem bai thi*/
+     function luu_diem_test_DB($id_TK,$test,$monhoc,$diem)
+     {
+        $sql1 = "select HocVienID from hocvien where TaiKhoanID='$id_TK' ";
+        $kq1 = $this->con->query($sql1);
+             if ($kq1->num_rows > 0) {
+              while($rows =$kq1->fetch_assoc())
+              {
+                $HocVienID = $rows['HocVienID'];
+              }
+                /*luu vao ket qua */
+                $sql23 ="insert into ketqua(MaDeThi,MaMonHoc,HocVienID,Diem) values('$test','$monhoc','$HocVienID','$diem')";
+                $sql2 = "insert into ketqua(MaDeThi,MaMonHoc,HocVienID,Diem) values('$test','$monhoc','$HocVienID','$diem')";
+                $kq2 = $this->con->query($sql2);
+                if($kq2)
+                {
+                        echo '<script language="javascript" >
+                            alert("luu diem thanh cong !");
+                            </script>';
+                            return true;
+                }else{   
+                            return false;                
+                }
+                /*end luu vao ket qua */
+            } else {
+                        echo '<script language="javascript" >
+                            alert("luu diem khong thanh cong 2 !");
+                            </script>'; 
+            }       
+     }
+/*ket thuc luu diem bai thi*/
+
+/*bat dau load diem user*/
+    function load_diem_DB($id_TK,$monhoc,$test)
+    {
+        $sql = "
+                SELECT        hv.TenHocVien,kq.MaMonHoc,kq.MaDeThi,kq.Diem
+                FROM            hocvien AS hv INNER JOIN
+                                         ketqua AS kq ON hv.HocVienID = kq.HocVienID
+                where    hv.TaiKhoanID = '$id_TK' and hv.HocVienID = kq.HocVienID and kq.MaMonHoc = '$monhoc' and kq.MaDeThi = '$test'                      
+            ";
+        $kq = $this->con->query($sql);
+             if ($kq->num_rows > 0)
+              {
+                    return $kq;
+                } else{
+                    return $this->con->error;
+                }
+    }
+/*end load diem user*/
+
+/*    function kiemtra_HocVieID_Test_MonHoc($id_TK,$test,$monhoc)
+    {
+         $sql = "
+                SELECT        hv.TenHocVien,kq.MaMonHoc,kq.MaDeThi,kq.Diem
+                FROM            hocvien AS hv INNER JOIN
+                                         ketqua AS kq ON hv.HocVienID = kq.HocVienID
+                where    hv.TaiKhoanID = '$id_TK' and hv.HocVienID = kq.HocVienID and kq.MaMonHoc = '$monhoc' and kq.MaDeThi = '$test'                      
+            ";       
+    }*/
+
+    function lay_made_select() {
+        $sql = "SELECT * FROM dethi";
+        return $sql;
+    }
+
+    function them_cau_hoi($mamon,$made,$noidung,$a,$b,$c,$d,$dapan)
+    {
+        $sql = "
+        INSERT INTO bocauhoi(MaDeThi,MaMonHoc,NoiDungCauHoi,A,B,C,D,DapAn)
+        VALUES ('$made','$mamon','$noidung','$a','$b','$c','$d','$dapan');
+        ";
+        return $sql;
+    }
+
+    function lay_ds_cauhoi()
+    {
+        $sql = "select * from bocauhoi";
+        $kq = $this->con->query($sql);
+             if ($kq->num_rows > 0)
+              {
+                return $kq;
+              }else{
+                 return $this->con->error;
+              }
+    }
+
+    function xoa_cau_hoi($macauhoi)
+    {
+        $sql = "
+        DELETE FROM bocauhoi WHERE MaCauHoi='".$macauhoi."'
+        ";
+        return $sql;
+    }
+
+    function get_1_cau_hoi($macauhoi)
+    {
+        $sql = "
+        SELECT * FROM bocauhoi WHERE MaCauHoi='".$macauhoi."'
+        ";
+                $kq = $this->con->query($sql);
+             if ($kq->num_rows > 0)
+              {
+                return $kq;
+              }else{
+                 return $this->con->error;
+              }
+    }
+
+    function update_1_cau_hoi($macauhoi,$noidung,$a,$b,$c,$d,$dapan)
+    {
+         $sql = "
+        UPDATE bocauhoi SET NoiDungCauHoi='$noidung',A='$a',B='$b',C='$c',D='$d',DapAn='$dapan' WHERE MaCauHoi='$macauhoi'
+        ";
+                $kq = $this->con->query($sql);
+                return $kq;
     }
 
 

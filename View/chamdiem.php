@@ -1,6 +1,11 @@
 <?php require_once("header_student.php");
+ require_once("../Controller/controller_lambaithi.php"); 
+$p = new controller_lambaithi();
 session_start();
 $diem = $_SESSION['diem'];
+$test =$_SESSION['test'] ;
+$monhoc =$_SESSION['monhoc'];
+$id_TK = $_SESSION['ID'];
 ?>
 
   
@@ -54,9 +59,31 @@ input[type="radio"] + label {
     		<div class="col-sm-2" style="background-color: aquamarine"></div>
     		<div class="col-sm-8" style="background-color: white">
     			<div id="main-contain-test" class="col-md-8">
-<span><?php  echo "so diem lam bai la :".$diem; ?></span>
-<button type="submit" name="nut" value="LUu" class="btn btn-primary btn-block">LƯU BÀI</button>
-                  </div>   
+                     <form method="post" action="">
+                    <span><h1><?php  echo "so diem lam bai la : ".$diem; ?></h1>
+                    </span>
+                    <button type="submit" name="nut" value="luu" class="btn btn-primary btn-block">LƯU BÀI
+                    </button>
+                </form>
+
+  <?php
+if(isset($_REQUEST['nut']))
+    {
+
+        $kq1 = $p->luu_diem_test($id_TK,$test,$monhoc,$diem);
+        if($kq1 == false){
+                        echo '<script language="javascript" >
+                            alert("luu diem khong thanh cong  !");
+                            </script>';
+        }else{
+            $p->load_diem($id_TK,$monhoc,$test);
+        }
+		
+    }
+ ?>                 
+
+
+                </div>   
                     
     			</div>
                 <div class="col-sm-2" style="background-color: aquamarine"></div>
@@ -64,7 +91,7 @@ input[type="radio"] + label {
     		
     	</div>
     </div>
-     
+ 
 
 </body>
 </html>

@@ -58,7 +58,7 @@ input {
     margin-top: 10px;
 }
 
-input[type="checkbox"] {
+/*input[type="checkbox"] {
     position: relative;
     box-sizing: border-box;
     top: 2px;
@@ -67,7 +67,7 @@ input[type="checkbox"] {
     width: 0px;
     z-index: 3;
     opacity: 0;
-}
+}*/
 
 <<<<<<< HEAD
 input[type="email"], input[type="password"],input[type="text"] {

@@ -87,6 +87,14 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
             }
         });
 
+         function kiemtra_login()
+         {
+                if(  $kq2 == true && $kq3 == true  ){
+                $('#button').removeAttr('disabled');
+
+            }
+         }
+
          $('#username').blur(function () { 
             var username = $('#username').val(); 
             $.get(
@@ -109,6 +117,7 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
                         }else if(data == 0){  
                           
                             $kq2 = true;
+                            kiemtra_login();
                         }
                         else if(data == 3){  
                             $data = "<h4><span class='alert alert-warning' >Họ Tên chưa được đăng ký !</span></h4>";
@@ -142,6 +151,7 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
                             //console.log(data);
                         }else if(data == 0){  
                             $kq3 = true;
+                            kiemtra_login();
                         }
                         else if(data == 3){  
                             $data = "<h4><span class='alert alert-warning' >password không đúng !</span></h4>";
