@@ -25,14 +25,63 @@ class controller_lambaithi extends Model{
 		  $array_cautraloi_DB = array();
 		$i=0;
 				while($rows=$kq->fetch_assoc()) {
+/*			echo '<div id="contain_cauhoi">';		
 			echo 'Câu  '.++$i.'&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.$rows["NoiDungCauHoi"].'<br>';
-			echo '<input name="cauhoiso'.$i.'" type="radio"  value="'.$rows["A"].'"> A. '.$rows["A"].' ';
+			echo '<div id="contain_cauhoi_abcd">';
+			echo '<div id="ab">';
+			echo '<input name="cauhoiso'.$i.'" type="radio"  value="'.$rows["A"].'"> A. '.$rows["A"].' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
 			echo '<input name="cauhoiso'.$i.'" type="radio"  value="'.$rows["B"].'"> B. '.$rows["B"].' ';
+			echo '</div>';
+			echo '<div id="ab">';
 			echo '<input name="cauhoiso'.$i.'" type="radio" value="'.$rows["C"].'"> C. '.$rows["C"].' ';
 			echo '<input name="cauhoiso'.$i.'" type="radio"  value="'.$rows["D"].'"> D. '.$rows["D"];
 			$array_cautraloi_DB[$i] = $rows['DapAn'];
-			echo '<hr width="50%">';
-			
+			echo '</div>';
+			echo '</div>';
+			echo '</div>';	*/
+
+	echo '
+
+				<table width="600" border="0" id="contain_cauhoi">
+				
+				  <tr >
+				    <td colspan="2"><div align="left">
+				    	Câu  '.++$i.'&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.$rows["NoiDungCauHoi"].'
+				    	</div>
+				    </td>
+				  </tr>
+				  <tr>
+				  
+				    <td><div align="left">
+				      <input name="cauhoiso'.$i.'" type="radio"  value="'.$rows["A"].'"> A. '.$rows["A"].' 
+				      <label for="a"></label>
+				    </div>
+				  
+				    
+				    <td><div align="left">
+				      <input name="cauhoiso'.$i.'" type="radio"  value="'.$rows["B"].'"> B. '.$rows["B"].' 
+				      <label for="a"></label>
+				    </div>
+				    
+				  </tr>
+				  <tr>
+				    <td><div align="left">
+				      <input name="cauhoiso'.$i.'" type="radio"  value="'.$rows["C"].'"> C. '.$rows["C"].' 
+				      <label for="a"></label>
+				    </div>
+				   
+				    
+				    <td><div align="left">
+				      <input name="cauhoiso'.$i.'" type="radio"  value="'.$rows["D"].'"> D. '.$rows["D"].' 
+				      <label for="a"></label>
+				    </div>
+				    
+				  </tr>
+				
+				</table>
+
+	';
+			$array_cautraloi_DB[$i] = $rows['DapAn'];
 		}
 		return $array_cautraloi_DB;
 	}
@@ -172,6 +221,42 @@ class controller_lambaithi extends Model{
                     </script>'; 
               } 	
 	}
+
+	function load_diem_all($id_TK)
+	{
+		$p = new model();
+		$kq = $p->load_diem_all($id_TK);
+		     $rows = $kq->fetch_assoc();
+               $tenhocvien = $rows['TenHocVien'];
+               $mamonhoc = $rows['MaMonHoc'];
+               if($mamonhoc == 1){
+               	$mamonhoc ="Tieng Anh";
+               }
+               $madethi = $rows['MaDeThi'];
+               $diem = $rows['Diem'];
+               $date = date("Y-m-d");
+               echo '
+                <hr>
+                <table width="500" border="1">
+                  <tr>
+                    <td>Họ Tên</td>
+                    <td>Môn Học</td>
+                    <td>Bài Thi Số</td>
+                    <td>Điểm</td>
+                    <td>Ngày</td>
+                  </tr>
+ 						<tr>
+		                    <td>'.$tenhocvien.'</td>
+		                    <td>'.$mamonhoc.'</td>
+		                    <td>'.$madethi.'</td>
+		                    <td>'.$diem.'</td>
+		                    <td>'.$date.'</td>
+		                </tr>
+                </table>		                
+               		';
+           
+	}
+
 }
 
 ?>

@@ -80,8 +80,9 @@ class model extends connection
        
     }
 
-     function form_register($email,$password,$user,$username){
+     function form_register($email,$password1,$user,$username){
         if($user =="Học Viên"){
+            $password = md5($password1);
              $sql = "insert into taikhoan(HoTen,Email,MatKhau,NguoiDung) values('$username','$email','$password','1')";
              $kq = $this->con->query($sql);
             if($kq === true){
@@ -113,7 +114,8 @@ class model extends connection
     {
             $username = $this->con->escape_string(trim(strip_tags($username)));
             $password = $this->con->escape_string(trim(strip_tags($password)));
-            $sql = "select * from taikhoan where HoTen = '$username' and MatKhau = '$password' ";
+            $pass = md5($password);
+            $sql = "select * from taikhoan where HoTen = '$username' and MatKhau = '$pass' ";
             $kq = $this->con->query($sql);
 
             if ($kq->num_rows != 0) {
@@ -162,6 +164,7 @@ class model extends connection
 /*bat dau luu diem bai thi*/
      function luu_diem_test_DB($id_TK,$test,$monhoc,$diem)
      {
+
         $sql1 = "select HocVienID from hocvien where TaiKhoanID='$id_TK' ";
         $kq1 = $this->con->query($sql1);
              if ($kq1->num_rows > 0) {
@@ -170,14 +173,10 @@ class model extends connection
                 $HocVienID = $rows['HocVienID'];
               }
                 /*luu vao ket qua */
-                $sql23 ="insert into ketqua(MaDeThi,MaMonHoc,HocVienID,Diem) values('$test','$monhoc','$HocVienID','$diem')";
                 $sql2 = "insert into ketqua(MaDeThi,MaMonHoc,HocVienID,Diem) values('$test','$monhoc','$HocVienID','$diem')";
                 $kq2 = $this->con->query($sql2);
                 if($kq2)
                 {
-                        echo '<script language="javascript" >
-                            alert("luu diem thanh cong !");
-                            </script>';
                             return true;
                 }else{   
                             return false;                
@@ -200,6 +199,22 @@ class model extends connection
                                          ketqua AS kq ON hv.HocVienID = kq.HocVienID
                 where    hv.TaiKhoanID = '$id_TK' and hv.HocVienID = kq.HocVienID and kq.MaMonHoc = '$monhoc' and kq.MaDeThi = '$test'                      
             ";
+        $kq = $this->con->query($sql);
+             if ($kq->num_rows > 0)
+              {
+                    return $kq;
+                } else{
+                    return $this->con->error;
+                }
+    }
+
+    function load_diem_all($id_TK)
+    {
+        $sql = "
+                SELECT        hv.TenHocVien,kq.MaMonHoc,kq.MaDeThi,kq.Diem
+                FROM            hocvien AS hv INNER JOIN
+                                         ketqua AS kq ON hv.HocVienID = kq.HocVienID
+                where    hv.TaiKhoanID = '$id_TK' and hv.HocVienID = kq.HocVienID                        ";
         $kq = $this->con->query($sql);
              if ($kq->num_rows > 0)
               {
@@ -277,6 +292,31 @@ class model extends connection
                 return $kq;
     }
 
+    function insert_text($content,$monhoc)
+    {
+        $sql = "UPDATE monhoc set BaiGiang='$content' where MaMonHoc='$monhoc' ";
+        $kq =  $this->con->query($sql);
+            if ($kq)
+              {
+                return $kq;
+              }else{
+                 return $this->con->error;
+              }
+    }
+
+
+    function show_text()
+    {
+        $sql = "SELECT * FROM monhoc where MaMonHoc=1";
+        $kq =  $this->con->query($sql);
+        $i = $kq->num_rows;
+            if ($i > 0)
+              {
+                return $kq;
+              }else{
+                 return 0;
+              }
+    } 
 
 }
 

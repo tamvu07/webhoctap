@@ -11,38 +11,113 @@ $monhoc =  $_REQUEST['monhoc'];
       <!-- post content -->
       <div class="blog__content mb-72">
         <h1 class="page-title" style=" MARGIN-LEFT: 26%; font-size: 108px;">Tiếng anh</h1>      
-        
-        <div class="row section-buttons mt-40">
-<!--             <div>
-              <a href="View/listen.php" class="btn btn-sm btn-color" style="width: 99px;    height: 30px;     margin-left: 150%;">
-                <span>TEST</span>
-              </a>
-            </div> -->
-            <div class="col-sm-3">
-              <div class="dropdown dropright">
-                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" >
-                  TEST
-                </button>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="View/test.php?test=1&monhoc=<?php 
-                  echo $monhoc ?> ">TEST 1 </a>
-                </div>
-              </div>   
-            </div> 
-            <div class="col-sm-9">
-              <div class="dropdown dropright">
-				    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" >
-				      BÀI GIẢNG
-				    </button>
-				    <div class="dropdown-menu">
-				      <a class="dropdown-item" href="#">VIDEO</a>
-				      <a class="dropdown-item" href="#">TÀI LIỆU</a>
-				    </div>
-				  </div>   
-            </div>              
+        <!-- bat dau cac dong lam bai thi , hoc bai -->
+<div align="text-center" >
        
+            <br>
+            <!-- bat dau dong xoa cau hoi  -->
+            <div class="row" >
+                <div class="col"></div>              
+                <div class="col">
 
-        </div>       
+                 
+              <button type="button"  data-toggle="modal" data-target="#myModal_baihoc" class="btn btn-primary btn-block" >
+                HỌC BÀI
+              </button>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal_baihoc">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">BÀI HỌC</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+
+        <div class="modal-body">
+          
+            
+          
+                       <!--  <li><a href="View/xoacauhoi.php?monhoc=<?php echo $monhoc ?>&baithi=1" >CLIP</a></li> -->
+                         <li><a href="View/xembaigiang_ta_clip.php" >XEM CLIP</a></li>
+                          <li><a href="View/xembaigiang_file.php" >XEM BÀI GIẢNG</a></li>
+                        
+                       
+                       
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+              
+
+                </div>
+                <div class="col"></div>  
+
+            </div>             
+    <!-- ket thuc dong xoa cau hoi -->
+            <br>
+    <!-- bat dau dong sua cau hoi  -->
+            <div class="row" >
+                <div class="col"></div>              
+                <div class="col">
+
+                 
+              <button type="button"  data-toggle="modal" data-target="#myModal_lambai" class="btn btn-primary btn-block" >
+                LÀM BÀI THI
+              </button>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal_lambai">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Danh Sách Bài Thi </h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+
+        <div class="modal-body">
+          
+            
+          
+                        <li><a href="View/test.php?test=1&monhoc=<?php 
+                  echo $monhoc ?> " >Bài Thi 1</a></li>
+                        <li><a href="#" >Bài Thi 2</a></li>
+                        <li><a href="#" >Bài Thi 3</a></li>
+                       
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+              
+
+                </div>
+                <div class="col"></div>  
+
+            </div> 
+    <!-- ket thuc dong sua cau hoi -->
+        </div>
+        <!-- ket thuc cac dong lam bai thi ,hoc bai -->
+     
 
         
         </div>   

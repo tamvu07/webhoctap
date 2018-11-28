@@ -4,7 +4,7 @@ $t = new controller_lambaithi();
 require_once("header_teacher.php");
 session_start();
 $monhoc = $_GET['monhoc'];
-$baithi = $_GET['baithi'];
+/*$baithi = $_GET['baithi'];*/
 ?>
 
 

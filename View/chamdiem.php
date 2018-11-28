@@ -56,19 +56,19 @@ input[type="radio"] + label {
 
     <div class="main-container container" id="main-container" style="    background-color: #fff; ">    
     	<div class="row">
-    		<div class="col-sm-2" style="background-color: aquamarine"></div>
+    		<div class="col-sm-2" style="background-color: lavender;"></div>
     		<div class="col-sm-8" style="background-color: white">
     			<div id="main-contain-test" class="col-md-8">
                      <form method="post" action="">
-                    <span><h1><?php  echo "so diem lam bai la : ".$diem; ?></h1>
+                    <span><h1><?php  echo "Số Điểm Bài Làm : ".$diem; ?></h1>
                     </span>
-                    <button type="submit" name="nut" value="luu" class="btn btn-primary btn-block">LƯU BÀI
-                    </button>
+<!--                     <button type="submit" name="nut" value="luu" class="btn btn-primary btn-block">LƯU BÀI
+                    </button> -->
                 </form>
 
   <?php
-if(isset($_REQUEST['nut']))
-    {
+/*if(isset($_REQUEST['nut']))
+    {*/
 
         $kq1 = $p->luu_diem_test($id_TK,$test,$monhoc,$diem);
         if($kq1 == false){
@@ -76,17 +76,21 @@ if(isset($_REQUEST['nut']))
                             alert("luu diem khong thanh cong  !");
                             </script>';
         }else{
+                        echo '<script language="javascript" >
+                            alert("luu diem thanh cong !");
+                            </script>';
             $p->load_diem($id_TK,$monhoc,$test);
         }
 		
-    }
+    // }
  ?>                 
-
-
-                </div>   
-                    
+          </div>   
+                <a  href="View/montienganh.php?monhoc=<?php 
+                  echo $monhoc ?> ">
+                 <button  type="submit" name="thoat" id="nut" value="thoat" class="btn btn-primary btn-block" style="width: 30%;    margin-left: 38%;" >THOÁT</button> 
+               </a>                    
     			</div>
-                <div class="col-sm-2" style="background-color: aquamarine"></div>
+                <div class="col-sm-2" style="background-color: lavender;"></div>
     		</div>
     		
     	</div>

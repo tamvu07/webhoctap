@@ -47,7 +47,7 @@ li{
                 <div class="col"></div>              
                 <div class="col">
 
-                 <a  href="View/test.php?monhoc=<?php 
+                 <a  href="View/dangbai.php?monhoc=<?php 
                   echo $monhoc ?> ">
               <button  type="submit" name="nut_dangbai" id="nut" value="nut_dangbai" class="btn btn-primary btn-block"  > ĐĂNG BÀI</button>                
                 </a>
@@ -69,16 +69,29 @@ li{
                 <div class="col"></div>   
             </div> 
             <br>
+<!-- bat dau dang clip -->
+            <div class="row" >
+                <div class="col"></div>              
+                <div class="col">
+               <a  href="View/dangclip.php?monhoc=<?php 
+                  echo $monhoc ?> "><button  type="submit" name="nut_dangcauhoi" id="nut" value="nut_dangcauhoi" class="btn btn-primary btn-block" >
+             ĐĂNG CLIP
+            </button></a>
+                </div>
+                <div class="col"></div>   
+            </div> 
+            <br>
+<!-- ket thuc dang clip -->
             <!-- bat dau dong xoa cau hoi  -->
             <div class="row" >
                 <div class="col"></div>              
                 <div class="col">
 
-                 
-              <button type="button"  data-toggle="modal" data-target="#myModal_xoa" class="btn btn-primary btn-block" >
+                 <a href="View/xoacauhoi.php?monhoc=<?php echo $monhoc ?>" >
+              <button type="button"  data-toggle="modal"  class="btn btn-primary btn-block" >
                 XÓA CÂU HỎI
               </button>
-
+              </a>
   <!-- The Modal -->
   <div class="modal fade" id="myModal_xoa">
     <div class="modal-dialog modal-sm">
@@ -93,13 +106,9 @@ li{
         <!-- Modal body -->
 
         <div class="modal-body">
-          
-            
-          
                         <li><a href="View/xoacauhoi.php?monhoc=<?php echo $monhoc ?>&baithi=1" >Bài Thi 1</a></li>
                         <li><a href="#" >Bài Thi 2</a></li>
-                        <li><a href="#" >Bài Thi 3</a></li>
-                       
+                        <li><a href="#" >Bài Thi 3</a></li>           
         </div>
         
         <!-- Modal footer -->
@@ -122,11 +131,14 @@ li{
             <div class="row" >
                 <div class="col"></div>              
                 <div class="col">
-
-                 
-              <button type="button"  data-toggle="modal" data-target="#myModal_sua" class="btn btn-primary btn-block" >
+               <a href="View/suacauhoi.php?monhoc=<?php echo $monhoc ?>" >
+              <button type="button"  data-toggle="modal"  class="btn btn-primary btn-block" >
                 SỬA CÂU HỎI
               </button>
+              </a>
+<!--               <button type="button"  data-toggle="modal" data-target="#myModal_sua" class="btn btn-primary btn-block" >
+                SỬA CÂU HỎI
+              </button> -->
 
   <!-- The Modal -->
   <div class="modal fade" id="myModal_sua">
@@ -145,7 +157,7 @@ li{
           
             
           
-                        <li><a href="View/suacauhoi.php?monhoc=<?php echo $monhoc ?>&baithi=1" >Bài Thi 11</a></li>
+                        <li><a href="View/suacauhoi.php?monhoc=<?php echo $monhoc ?>&baithi=1" >Bài Thi 1</a></li>
                         <li><a href="#" >Bài Thi 2</a></li>
                         <li><a href="#" >Bài Thi 3</a></li>
                        
@@ -167,11 +179,8 @@ li{
             </div> 
     <!-- ket thuc dong sua cau hoi -->
         </div>       
-
         
         </div>   
-				
-
         	
         <div class="main-container container pt-80 pb-80" id="main-container">            
       <!-- post content -->

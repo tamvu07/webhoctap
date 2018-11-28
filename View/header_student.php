@@ -3,6 +3,10 @@
 ob_start();
 require_once "../Model/Model.php";
 $toeic = new model();
+    error_reporting(E_ALL ^ E_NOTICE);
+    session_start();
+
+$username = $_SESSION['username'];
 /*if (isset($_GET['p']))
     $p = $_GET['p'];
 if (!isset($_SESSION['login_id']) && $_SERVER['REQUEST_URI'] != "/ToeicThi/View/Login.html")
@@ -23,6 +27,7 @@ if (!isset($_SESSION['login_id']) && $_SERVER['REQUEST_URI'] != "/ToeicThi/View/
     <link href='https://fonts.googleapis.com/css?family=Rubik:400,600,700%7CRoboto:400,700' rel='stylesheet'>
 
     <!-- Css -->
+    <link rel="stylesheet" href="css/fontawesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/font-icons.css"/>
     <link rel="stylesheet" href="css/style.css"/>
@@ -97,7 +102,9 @@ if (!isset($_SESSION['login_id']) && $_SERVER['REQUEST_URI'] != "/ToeicThi/View/
                         <a href="View/main.html" class="sidenav__menu-url">Đăng Xuất</a>
                     </li>
                     <li>
-                        <a href="#" class="sidenav__menu-url">Đăng kí</a>
+                        <a href="#" class="sidenav__menu-url">
+                            <?php echo $username ; ?>
+                            </a>
                     </li>
                 </ul>
             </nav>
@@ -130,7 +137,7 @@ if (!isset($_SESSION['login_id']) && $_SERVER['REQUEST_URI'] != "/ToeicThi/View/
                                 <span>Đăng Xuất</span>
                             </a>
                             <a  class="btn btn-sm btn-light" href="View/Register.html" onfocus="false">
-                                <span>Đăng kí</span>
+                                <span><?php echo $username ; ?></span>
                             </a>
                         </div>
                         <div class="socials nav__socials socials--nobase socials--white justify-content-end">
@@ -246,11 +253,17 @@ if (!isset($_SESSION['login_id']) && $_SERVER['REQUEST_URI'] != "/ToeicThi/View/
                         <a>DANH SÁCH MÔN HỌC</a>
                            <ul class="nav__dropdown-menu">
                             <li><a href="View/montienganh.php?monhoc=1">TIẾNG ANH</a></li>
-                            <li><a href="View/laptrinhc.php">LẬP TRÌNH C++</a></li>
-                        </ul>
+                            <li><a href="#">LẬP TRÌNH C++</a></li>
+
+                            <!-- <li><a href="View/laptrinhc.php">LẬP TRÌNH C++</a></li>
+ -->                        </ul>
                     </li>
                    
- 
+ <!-- bat dau xem ket qua  -->
+                     <li class="active">
+                        <a href="View/xemketqua.php" >XEM KẾT QUẢ</a>
+                    </li>
+ <!-- ket thuc xem ket qua -->
 <!--                     <li>
                         <a href="#">LIÊN HỆ</a>
                     </li> -->

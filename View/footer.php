@@ -95,6 +95,6 @@
 <script src="js/jquery.newsTicker.min.js"></script>
 <script src="js/modernizr.min.js"></script>
 <script src="js/scripts.js"></script>
-
+<script src="View/ckeditor/ckeditor.js"></script>
 </body>
 </html>

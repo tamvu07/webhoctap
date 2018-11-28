@@ -4,7 +4,7 @@ require_once("header_teacher.php");
 $t = new controller_lambaithi();
 session_start();
 $monhoc = $_GET['monhoc'];
-$baithi = $_GET['baithi'];
+/*$baithi = $_GET['baithi'];*/
 ?>
 
 <script src="../SpryAssets/SpryValidationCheckbox.js" type="text/javascript"></script>

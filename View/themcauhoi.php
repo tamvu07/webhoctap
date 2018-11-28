@@ -10,13 +10,25 @@ $monhoc =  $_GET['monhoc'];
 <form method="POST">
 <table width="600" border="1" align="center">
   <tr>
-    <td colspan="2"><div align="center">Tao cau hoi</div></td>
+    <td colspan="2"><div align="center">Tạo Câu Hỏi</div></td>
   </tr>
   <tr>
-    <td>Ma mon hoc</td>
-    <td><?php echo $_GET['monhoc'];?></td>
+    <td>Môn học</td>
+    <td>
+      <?php 
+      $monhoc =  $_GET['monhoc'];
+      if($monhoc == 1)
+      {
+        echo "Tiếng Anh";
+      }else{
+        echo "....";
+      }
+      ?>
+      
+
+    </td>
   </tr>
-  <tr>
+<!--   <tr>
     <td width="291">Ma de</td>
     <td width="293">
       <select name="made" size="1" id="made">
@@ -24,7 +36,7 @@ $monhoc =  $_GET['monhoc'];
           $t->lay_made_select();
         ?>
     </select></td>
-  </tr>
+  </tr> -->
   <tr>
     <td>Noi dung</td>
     <td>
@@ -52,8 +64,8 @@ $monhoc =  $_GET['monhoc'];
   </tr>
   <tr>
     <td colspan="2"><div align="center">
-      <input type="submit" name="submit" id="submit" value="Xong" />
-      <input type="reset" name="Reset" id="button" value="Reset" />
+      <input type="submit" name="submit" id="submit" value="ĐĂNG" />
+      <input type="reset" name="Reset" id="button" value="XÓA" />
     </div></td>
   </tr>
 </table>

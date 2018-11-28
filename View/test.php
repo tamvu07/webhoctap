@@ -52,6 +52,17 @@ input[type="radio"] + label {
     margin-bottom: 0;
     position: relative;
     line-height: 22px; }
+
+#contain_cauhoi{
+     border: 1px solid #d6d2d2;
+    border-radius: 10px;
+    margin: 20px;
+      
+}    
+#contain_cauhoi_abcd{
+    margin: 20px;
+
+}   
     </style>
 
 
@@ -59,17 +70,23 @@ input[type="radio"] + label {
 <body>
 
 <!-- dong ho -->
+<div  id="snackbar" style="position: fixed; bottom:0px; left: -6%;z-index: 10000;">    
+ <div id="countdown-timer"><span id="m" name="m">5</span>:<span id="s" name="s">00</span></div> 
+ </div>
+
+
     <div id="test-title" class="col-md-8">
-       <div id="countdown-timer"></div>
+       
+         
     </div>
-        <div id="countdown-timer"><span id="m" name="m">5</span>:<span id="s" name="s">00</span></div>
+
 <!-- end dong ho -->
 
     <div class="main-container container" id="main-container" style="    background-color: #fff; ">    
     	<div class="row">
-    		<div class="col-sm-2" style="background-color: aquamarine"></div>
+    		<div class="col-sm-2" style="background-color: lavender;"></div>
     		<div class="col-sm-8" style="background-color: white">
-    			<div id="main-contain-test" class="col-md-8">
+    			<div id="main-contain-test" >
 
                     <form method="post" action="">
     				<?php
@@ -86,7 +103,7 @@ input[type="radio"] + label {
                     /*ket thuc dem phan tu trong mang*/
 
     				?>
-<button type="submit" name="nut" id="nut" value="chambai" class="btn btn-primary btn-block">CHAM BAI</button>
+<button type="submit" name="nut" id="nut" value="chambai" class="btn btn-primary btn-block">Nộp Bài</button>
 
 <?php
 
@@ -134,7 +151,7 @@ $i = 1;
                   </div>   
                     
     			</div>
-                <div class="col-sm-2" style="background-color: aquamarine"></div>
+                <div class="col-sm-2" style="background-color: lavender;"></div>
     		</div>
     		
     	</div>
