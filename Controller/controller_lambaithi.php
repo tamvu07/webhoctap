@@ -222,10 +222,19 @@ class controller_lambaithi extends Model{
               } 	
 	}
 
+
+
 	function load_diem_all($id_TK)
 	{
 		$p = new model();
 		$kq = $p->load_diem_all($id_TK);
+		if($kq == 0)
+		{
+                  echo '<script language="javascript" >
+                    alert("Chưa Có Điểm");
+                    window.location="View/montienganh.php?monhoc=1";
+                    </script>'; 				
+		}else{
 		     $rows = $kq->fetch_assoc();
                $tenhocvien = $rows['TenHocVien'];
                $mamonhoc = $rows['MaMonHoc'];
@@ -254,6 +263,7 @@ class controller_lambaithi extends Model{
 		                </tr>
                 </table>		                
                		';
+	        }  		
            
 	}
 

@@ -223,7 +223,7 @@ input[type="file"]/*, input[type="email"]*/ {
 
               <p><h3>Chúng tôi luôn đồng hành cùng bạn </h3></p>
               
-              <blockquote><p>“Thành Công Của Bạn Là Miên Tự Hào Của Chúng Tôi”</p></blockquote>
+              <blockquote><p>“Thành Công Của Bạn Là Miền Tự Hào Của Chúng Tôi”</p></blockquote>
 
               
 

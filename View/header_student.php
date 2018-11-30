@@ -260,10 +260,10 @@ if (!isset($_SESSION['login_id']) && $_SERVER['REQUEST_URI'] != "/ToeicThi/View/
                     </li>
                    
  <!-- bat dau xem ket qua  -->
-                     <li class="active">
+<!--                      <li class="active">
                         <a href="View/xemketqua.php" >XEM KẾT QUẢ</a>
                     </li>
- <!-- ket thuc xem ket qua -->
+ ket thuc xem ket qua --> 
 <!--                     <li>
                         <a href="#">LIÊN HỆ</a>
                     </li> -->

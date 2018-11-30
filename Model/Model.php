@@ -220,7 +220,7 @@ class model extends connection
               {
                     return $kq;
                 } else{
-                    return $this->con->error;
+                    return 0;
                 }
     }
 /*end load diem user*/

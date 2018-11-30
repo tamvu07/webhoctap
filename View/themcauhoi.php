@@ -101,11 +101,43 @@ $monhoc =  $_GET['monhoc'];
                     alert(" Vui Lòng Nhập Đủ Thông Tin");
                     </script>';
       }
-    else
-    $t->them_cau_hoi($mamonhoc,$made,$noidung,$a,$b,$c,$d,$dapan);
+    else{
+      if($dapan != $a && $dapan != $b && $dapan != $c  && $dapan != $d)
+      {
+                   echo '<script language="javascript" >
+                    alert("Đáp Án Không Tồn Tại Trong Câu Hỏi !");
+                    </script>';         
+      }else{
+          $t->them_cau_hoi($mamonhoc,$made,$noidung,$a,$b,$c,$d,$dapan);
+      }
+    }
+
+
+    
   }
 ?>
 
 </div>
 
 <?php require_once("footer.php");?>
+
+    <script>
+
+        $(document).ready(function () { 
+
+         $('#txtDapAn').blur(function () { 
+
+            var A = $('#txtA').val(); 
+            var B = $('#txtB').val(); 
+            var C = $('#txtC').val(); 
+            var D = $('#txtD').val(); 
+            var dapan = $('#txtDapAn').val(); 
+
+            if(dapan != A && dapan != B && dapan != C && dapan != D)
+            {
+              alert("Đáp Án Không Tồn Tại Trong Câu Hỏi !");
+            }
+
+            });
+     });
+ </script>

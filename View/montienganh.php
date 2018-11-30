@@ -19,8 +19,6 @@ $monhoc =  $_REQUEST['monhoc'];
             <div class="row" >
                 <div class="col"></div>              
                 <div class="col">
-
-                 
               <button type="button"  data-toggle="modal" data-target="#myModal_baihoc" class="btn btn-primary btn-block" >
                 HỌC BÀI
               </button>
@@ -39,15 +37,9 @@ $monhoc =  $_REQUEST['monhoc'];
         <!-- Modal body -->
 
         <div class="modal-body">
-          
-            
-          
                        <!--  <li><a href="View/xoacauhoi.php?monhoc=<?php echo $monhoc ?>&baithi=1" >CLIP</a></li> -->
                          <li><a href="View/xembaigiang_ta_clip.php" >XEM CLIP</a></li>
                           <li><a href="View/xembaigiang_file.php" >XEM BÀI GIẢNG</a></li>
-                        
-                       
-                       
         </div>
         
         <!-- Modal footer -->
@@ -115,11 +107,24 @@ $monhoc =  $_REQUEST['monhoc'];
 
             </div> 
     <!-- ket thuc dong sua cau hoi -->
+
+
         </div>
         <!-- ket thuc cac dong lam bai thi ,hoc bai -->
-     
-
-        
+    <!-- bat dau xem ket qua -->
+    <br>
+           <div class="row" >
+                <div class="col"></div> 
+                <div class="col">
+                  <a href="View/xemketqua.php" >
+              <button type="button" class="btn btn-primary btn-block" >
+                XEM KẾT QUẢ
+              </button>              
+                </a>
+                </div> 
+                <div class="col"></div> 
+            </div>    
+    <!-- ket thuc xem ket qua -->    
         </div>   
 				
 
